@@ -21,56 +21,66 @@
             <h3>Where are you now?</h3>
             <div class="checkbox">
               <label>
-                <input type="checkbox" id="check" >
+                <input type="checkbox" id="usa" >
                 Are you starting in the United States?
               </label>
             </div>
 
-            <div id="distance">
+            <div >
               <h3> Do you want to leave your Continent?</h3>
-              <select class="form-control">
-                <option value="">Doesn't matter</option>
-                <option value="true">Yes</option>
-                <option value="false">No</option>
+              <select class="form-control" id="distance">
+                <option  value=undefined>Doesn't matter</option>
+                <option  value=true>Yes</option>
+                <option value=false>No</option>
               </select>
             </div>
 
             <div id="spend">
-              <label class="checkbox-inline">
-                <input type="checkbox" id="spend1" value="1"> On a Budget ($)
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" id="spend2" value="2"> Moderate ($$)
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" id="spend3" value="3"> Treat Yo' Self ($$$)
-              </label>
+                <h3>What does your budget look like?</h2>
+                <label class="radio-inline">
+                  <input type="radio" name="optionsSpend" id="optionsR1" value=1>
+                    Thrifty ($)
+                </label>
+
+                <label class="radio-inline">
+                  <input type="radio" name="optionsSeason" id="optionsR2" value=2>
+                    Comfortable ($$)
+                </label>
+
+
+                <label class="radio-inline">
+                  <input type="radio" name="optionsSpend" id="optionsR3" value=3> Treat Yo' Self ($$$)
+                </label>
+
+
             </div>
-            <div class="season">
+
+            <div id="season">
               <h3>When are you Travelling?</h3>
               <div class="radio">
                 <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="summer" checked>
+                  <input type="radio" name="optionsSeason" id="optionsRadios1" value="summer" checked>
                     May - September
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="notSummer">
+                  <input type="radio" name="optionsSeason" id="optionsRadios2" value="notSummer">
                     October - April
                 </label>
               </div>
 
             </div>
-            <div id="beaches">
+            <div >
               <h3> How important is having a Beach?</h3>
-              <select class="form-control">
+              <select id="beaches" class="form-control">
                 <option value="1">Doesn't matter</option>
                 <option value="2">A little</option>
                 <option value="3">It would be nice</option>
                 <option value="4">Very important</option>
               </select>
             </div>
+
             <div class="checkbox">
               <label>
                 <input type="checkbox" id="checkSnow">
@@ -86,6 +96,7 @@
         </div>
       </div> <!--end of row-->
 
+      <p class="TEST"> </p>
       <p class="disclaimer">
         * This site is not affiliated with Southwest Airlines (though we like them, except the whole having to log in exactly 24hrs in advance if you want to have a chance at having a seat with your travelmates or not be stuck in a middle seat between what clearly must be 2 NFL linebackers)
       </p>
