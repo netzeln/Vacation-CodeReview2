@@ -10,11 +10,13 @@ $(document).ready(function() {
 
 
 
-    if (distance === "yes" ){
-      spend = spend + 1;
-    } else{
+    if (distance === "yes" || (distance === "either" && usa === true)){
+      var spend = spend - 1;
+    }
 
-      if (usa === true){
+
+
+      if ((usa === true && distance === "no") || (usa === false && distance !== "no")){
          if (beaches >= 2 && snow === false){
            if(spend <=  2 && season === "summer") {
              var destination = "Duluth";
@@ -24,14 +26,17 @@ $(document).ready(function() {
            var destination = "Los Angeles"
          }
 
-       } else if (snow === true && season ==="notSummer"){
-           var destination = "Duluth";
-         }else {
+       } else if (snow === false && season === "notSummer"){
            var destination = "Kansas City";
+         }else {
+           var destination = "Duluth";
          }
 
       }else {
-        if (beaches >= 2){
+        if (beaches >=3){
+          var destination ="Barcelona"
+        }
+         else if (beaches === 2){
           if (spend >= 2 ){
           var destination = "Copenhagen";}
           else {
@@ -41,16 +46,16 @@ $(document).ready(function() {
         else{
           if (spend >= 2 && snow === false && season === "notSummer"){
            var destination = "London"
-         } else if(spend >= 2) {
+         } else if(spend >= 2 || (spend >= 1 && season === "notSummer")) {
            var destination = "Stockholm"
          } else{
           var destination = "Prague"
         }
         }
       }
-  }
+
     $("#resultText").show();
-    $(".yourResult").text("temp dummy text " + " "+ distance + " "+ destination + " " + spend)
+    $(".yourResult").text("Go to " + " "+ distance + " "+ destination + " " + spend)
    event.preventDefault();
   });
 
