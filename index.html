@@ -11,91 +11,97 @@
     <title>Where do you want to go from here?</title>
   </head>
   <body>
-    <div class="container main">
+    <div class="main">
+    <div class="container">
       <div class="row">
         <div class="col-sm-5">
-          <h1>Want to Get Away?<span class="disclaimer">*</span></h1>
+          <div class="formBox">
+            <h1>Want to Get Away?<span class="disclaimer">*</span></h1>
 
-          <form class="survey">
+            <form class="survey">
 
-            <h3>Where are you now?</h3>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" id="usa" checked >
-                Are you starting in the United States?
-              </label>
-            </div>
-
-            <div >
-              <h3> Do you want to leave your Country / Continent?</h3>
-              <select class="form-control" id="distance">
-                <option value="either">Doesn't matter</option>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-
-            <div id="spend">
-                <h3>What does your budget look like?</h2>
-                <label class="radio-inline">
-                  <input type="radio" name="optionsSpend" id="optionsR1" checked value=1>
-                    Thrifty ($)
-                </label>
-
-                <label class="radio-inline">
-                  <input type="radio" name="optionsSpend" id="optionsR2" value=2>
-                    Comfortable ($$)
-                </label>
-
-
-                <label class="radio-inline">
-                  <input type="radio" name="optionsSpend" id="optionsR3" value=3> Treat Yo' Self ($$$)
-                </label>
-
-
-            </div>
-
-            <div id="season">
-              <h3>When are you Travelling?</h3>
-              <div class="radio">
+              <h3>Where are you now?</h3>
+              <div class="checkbox">
                 <label>
-                  <input type="radio" name="optionsSeason" id="optionsRadios1" value="summer" checked>
-                    May - September
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="optionsSeason" id="optionsRadios2" value="notSummer">
-                    October - April
+                  <input type="checkbox" id="usa" checked >
+                  Are you starting in the United States?
                 </label>
               </div>
 
-            </div>
-            <div >
-              <h3> How important is having a Beach?</h3>
-              <select id="beaches" class="form-control">
-                <option value="1">No beaches for me please</option>
-                <option value="2">A little</option>
-                <option value="3">It would be nice</option>
-                <option value="4">Very important</option>
-              </select>
-            </div>
+              <div >
+                <h3> Do you want to leave your Country / Continent?</h3>
+                <select class="form-control" id="distance">
+                  <option value="either">Doesn't matter</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
 
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" id="checkSnow">
-                Are you okay with Cold and Snow?
-              </label>
-            </div>
+              <div id="spend">
+                  <h3>What does your budget look like?</h2>
+                  <label class="radio-inline">
+                    <input type="radio" name="optionsSpend" id="optionsR1" checked value=1>
+                      Thrifty ($)
+                  </label>
 
-            <button type="submit" class="btn btn-info">Submit</button>
-          </form>
-        </div>
-        <div class="row-sm-7 results">
-          <h2>Your next trip should be...</h2>
-          <div id="resultText">
-            <h1 class="yourResult"></h1>
+                  <label class="radio-inline">
+                    <input type="radio" name="optionsSpend" id="optionsR2" value=2>
+                      Comfortable ($$)
+                  </label>
+
+
+                  <label class="radio-inline">
+                    <input type="radio" name="optionsSpend" id="optionsR3" value=3> Treat Yo' Self ($$$)
+                  </label>
+
+
+              </div>
+
+              <div id="season">
+                <h3>When are you Travelling?</h3>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsSeason" id="optionsRadios1" value="summer" checked>
+                      May - September
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsSeason" id="optionsRadios2" value="notSummer">
+                      October - April
+                  </label>
+                </div>
+
+              </div>
+              <div >
+                <h3> How important is having a Beach?</h3>
+                <select id="beaches" class="form-control">
+                  <option value="1">No beaches for me please</option>
+                  <option value="2">A little</option>
+                  <option value="3">It would be nice</option>
+                  <option value="4">Very important</option>
+                </select>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" id="checkSnow">
+                  Are you okay with Cold and Snow?
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-info">Submit</button>
+            </form>
           </div>
+        </div>
+        <div class="col-sm-7">
+          <div class="results">
+            <h2>Your next trip should be...</h2>
+            <div id="resultText">
+              <h1 class="yourResult"></h1>
+              <p class="description"><span= id="aboutDestination"</span><p>
+              </div>
+            </div>
         </div>
       </div> <!--end of row-->
 
