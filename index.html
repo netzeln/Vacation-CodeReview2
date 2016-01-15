@@ -21,29 +21,29 @@
             <h3>Where are you now?</h3>
             <div class="checkbox">
               <label>
-                <input type="checkbox" id="usa" >
+                <input type="checkbox" id="usa" checked >
                 Are you starting in the United States?
               </label>
             </div>
 
             <div >
-              <h3> Do you want to leave your Continent?</h3>
+              <h3> Do you want to leave your Country / Continent?</h3>
               <select class="form-control" id="distance">
-                <option  value=undefined>Doesn't matter</option>
-                <option  value=true>Yes</option>
-                <option value=false>No</option>
+                <option value="either">Doesn't matter</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
               </select>
             </div>
 
             <div id="spend">
                 <h3>What does your budget look like?</h2>
                 <label class="radio-inline">
-                  <input type="radio" name="optionsSpend" id="optionsR1" value=1>
+                  <input type="radio" name="optionsSpend" id="optionsR1" checked value=1>
                     Thrifty ($)
                 </label>
 
                 <label class="radio-inline">
-                  <input type="radio" name="optionsSeason" id="optionsR2" value=2>
+                  <input type="radio" name="optionsSpend" id="optionsR2" value=2>
                     Comfortable ($$)
                 </label>
 
@@ -74,7 +74,7 @@
             <div >
               <h3> How important is having a Beach?</h3>
               <select id="beaches" class="form-control">
-                <option value="1">Doesn't matter</option>
+                <option value="1">No beaches for me please</option>
                 <option value="2">A little</option>
                 <option value="3">It would be nice</option>
                 <option value="4">Very important</option>
@@ -93,6 +93,9 @@
         </div>
         <div class="row-sm-7 results">
           <h2>Your next trip should be...</h2>
+          <div id="resultText">
+            <h1 class="yourResult"></h1>
+          </div>
         </div>
       </div> <!--end of row-->
 
