@@ -60,13 +60,13 @@ $(document).ready(function() {
          } else{
           var destination = "Prague, Czech Republic";
           var simpleDest = "PRG";
-          $(".aboutDestination").empty().append("Based on your selections we recommend you go to:... <span class='destination'>" + destination + "</span>!"  );
-        }
+          $(".aboutDestination").empty().append("Based on your selections we recommend you go to:... <span class='destination'>" + destination + "</span>!");
+          }
         }
       }
 
     $("#resultText").show();
-    $(".yourResult").empty().append("Based on your selections we recommend you go to:... <span class='destination'>" + destination + "</span>!" + simpleDest );
+    $(".yourResult").empty().append("Based on your selections we recommend you go to:... <span class='destination'>" + destination + "</span>!");
 
     if (simpleDest === "DLH") {
       $("#aboutDestination").empty().html("Duluth is truly a 'cool' city. Boasting 'Park Point,' the worlds longest freshwater sandbar, it has almost 5 miles of sand beaches. Recently named Outside Magazine's 'outdoor city of the year,' it is a biker or paddler's paradise in the summer, and a winter sports enthusiast's playground in the winter</p>");
@@ -84,9 +84,10 @@ $(document).ready(function() {
       $("#aboutDestination").empty().html("California has a bit of everything, and is great year round<ul><li>Beaches</li><li>Movie Stars,AND</li><li> it's not far from<em>Disneyland</em>!</li></ul> ");
     }else if (simpleDest === "ARN") {
       $("#aboutDestination").empty().html("Stockholm, while expensive, is a beautiful city built on an archipelago. It can get cold in the winter. <ul><li>Outdoor Museums</li><li>IKEA, AND</li><li><em>Cheap</em> Beer!</li></ul> ");
+    }else if (simpleDest === "HNL") {
+      $("#aboutDestination").empty().html("Hawaii! Surf! Beach! Hike!. <ul><li>Many Islands to Explore</li><li>Ukuleles, AND</li><li>Barbecue with Noodle Salad</li></ul> ");
     }
-
-
+    $(".images").append('<img src="img/'+ simpleDest +'.jpg">');
    event.preventDefault();
   });
 
