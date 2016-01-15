@@ -8,9 +8,88 @@
 
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Where do you want to go from here?</title>
   </head>
   <body>
+    <div class="container main">
+      <div class="row">
+        <div class="col-sm-5">
+          <h1>Want to Get Away?<span class="disclaimer">*</span></h1>
+
+          <form class="survey">
+
+            <h3>Where are you now?</h3>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="check" >
+                Are you starting in the United States?
+              </label>
+            </div>
+
+            <div id="distance">
+              <h3> Do you want to leave your Continent?</h3>
+              <select class="form-control">
+                <option value="">Doesn't matter</option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+              </select>
+            </div>
+
+            <div id="spend">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="spend1" value="1"> On a Budget ($)
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="spend2" value="2"> Moderate ($$)
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="spend3" value="3"> Treat Yo' Self ($$$)
+              </label>
+            </div>
+            <div class="season">
+              <h3>When are you Travelling?</h3>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="summer" checked>
+                    May - September
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="notSummer">
+                    October - April
+                </label>
+              </div>
+
+            </div>
+            <div id="beaches">
+              <h3> How important is having a Beach?</h3>
+              <select class="form-control">
+                <option value="1">Doesn't matter</option>
+                <option value="2">A little</option>
+                <option value="3">It would be nice</option>
+                <option value="4">Very important</option>
+              </select>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="checkSnow">
+                Are you okay with Cold and Snow?
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-info">Submit</button>
+          </form>
+        </div>
+        <div class="row-sm-7 results">
+          <h2>Your next trip should be...</h2>
+        </div>
+      </div> <!--end of row-->
+
+      <p class="disclaimer">
+        * This site is not affiliated with Southwest Airlines (though we like them, except the whole having to log in exactly 24hrs in advance if you want to have a chance at having a seat with your travelmates or not be stuck in a middle seat between what clearly must be 2 NFL linebackers)
+      </p>
+    </div><!--end main-->
 
   </body>
 </html>

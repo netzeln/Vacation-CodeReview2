@@ -31,4 +31,4 @@ _{Tell me about the languages and tools you used to create this app. Assume that
 
 released under a GPL v3.0 license  (i.e., do what you will with this as long as you let people know where it came from, what you did you it, and let other people do the same thing (and don't hold me liable)).
 
-Copyright (c) 2016 **_Nic Netzel_**
+Copyright (c) 2016git **_Nic Netzel_**
