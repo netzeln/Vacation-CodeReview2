@@ -68,7 +68,7 @@ $(document).ready(function() {
     $("#resultText").show();
     $(".yourResult").empty().append("Based on your selections we recommend you go to:... <span class='destination'>" + destination + "</span>!");
 
-    $(".images").empty().append('<img src="img/'+ simpleDest +'.jpg">');
+    $(".images").empty().append('<img class="img-rounded" class="img-responsive" src="img/'+ simpleDest +'.jpg">');
 
     if (simpleDest === "DLH") {
       $("#aboutDestination").empty().html("Duluth is truly a 'cool' city. Boasting 'Park Point,' the worlds longest freshwater sandbar, it has almost 5 miles of sand beaches. Recently named Outside Magazine's 'outdoor city of the year,' it is a biker or paddler's paradise in the summer, and a winter sports enthusiast's playground in the winter</p>");
