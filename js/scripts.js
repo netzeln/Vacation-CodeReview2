@@ -68,6 +68,8 @@ $(document).ready(function() {
     $("#resultText").show();
     $(".yourResult").empty().append("Based on your selections we recommend you go to:... <span class='destination'>" + destination + "</span>!");
 
+    $(".images").empty().append('<img src="img/'+ simpleDest +'.jpg">');
+
     if (simpleDest === "DLH") {
       $("#aboutDestination").empty().html("Duluth is truly a 'cool' city. Boasting 'Park Point,' the worlds longest freshwater sandbar, it has almost 5 miles of sand beaches. Recently named Outside Magazine's 'outdoor city of the year,' it is a biker or paddler's paradise in the summer, and a winter sports enthusiast's playground in the winter</p>");
     } else if (simpleDest === "PRG") {
@@ -87,7 +89,7 @@ $(document).ready(function() {
     }else if (simpleDest === "HNL") {
       $("#aboutDestination").empty().html("Hawaii! Surf! Beach! Hike!. <ul><li>Many Islands to Explore</li><li>Ukuleles, AND</li><li>Barbecue with Noodle Salad</li></ul> ");
     }
-    $(".images").append('<img src="img/'+ simpleDest +'.jpg">');
+
    event.preventDefault();
   });
 

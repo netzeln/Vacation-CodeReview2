@@ -6,7 +6,10 @@
 #resultText {
   diplay: none;
 }
+.top{
+  background-color: #A0522D;
 
+}
 .destination{
   color: purple;
   font-style: italic;
@@ -26,9 +29,19 @@
 }
 .row{
  background-color: #1e90ff;
- border-radius: 5px; }
+ border-radius: 5px;
+ padding: 5px: }
 
 
 .description{
   font-size: 20px;
+}
+
+.images img{
+ display:block;
+ margin: auto;
+}
+
+body{
+  background-color: #20B2AA;
 }
