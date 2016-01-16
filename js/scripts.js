@@ -85,7 +85,7 @@ $(document).ready(function() {
     }else if (simpleDest === "LAX") {
       $("#aboutDestination").empty().html("California has a bit of everything, and is great year round<ul><li>Beaches</li><li>Movie Stars,AND</li><li> it's not far from<em>Disneyland</em>!</li></ul> ");
     }else if (simpleDest === "ARN") {
-      $("#aboutDestination").empty().html("Stockholm, while expensive, is a beautiful city built on an archipelago. It can get cold in the winter. <ul><li>Outdoor Museums</li><li>IKEA, AND</li><li><em>Cheap</em> Beer!</li></ul> ");
+      $("#aboutDestination").empty().html("Stockholm, while expensive, is a beautiful city built on an archipelago. It can get cold in the winter. <ul><li>Outdoor Museums</li><li>IKEA, BUT</li><li><em>Expensive</em> Beer!</li></ul> ");
     }else if (simpleDest === "HNL") {
       $("#aboutDestination").empty().html("Hawaii! Surf! Beach! Hike!. <ul><li>Many Islands to Explore</li><li>Ukuleles, AND</li><li>Barbecue with Noodle Salad</li></ul> ");
     }
