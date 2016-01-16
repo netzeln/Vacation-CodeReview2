@@ -17,7 +17,7 @@ _This website will take the users input via forms and determine where the user s
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_No major bugs known, however, if you find a break in the "if else" logic, I would love to know.  _
 
 ## Support and contact details
 
