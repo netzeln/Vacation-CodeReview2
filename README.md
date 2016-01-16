@@ -10,7 +10,7 @@ _This website will take the users input via forms and determine where the user s
 
 ## Setup/Installation Requirements
 
-* go to this website to use, OR
+* go to this website [http://netzeln.github.io/Vacation-CodeReview2/] to use, OR
 * clone the repository and do what you will with it
 
 
