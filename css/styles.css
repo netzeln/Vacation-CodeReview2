@@ -28,9 +28,9 @@
   padding: 15px;
 }
 .row{
- background-color: #1e90ff;
- border-radius: 5px;
- padding: 5px: }
+   background-color: #1e90ff;
+   border-radius: 5px;
+   padding: 5px: }
 
 
 .description{
@@ -38,8 +38,11 @@
 }
 
 .images img{
- display:block;
- margin: auto;
+   display: block;
+   margin:auto;
+   width: 90%;
+
+
 }
 
 body{
